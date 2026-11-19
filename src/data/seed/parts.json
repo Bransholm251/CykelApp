@@ -1,0 +1,10 @@
+[
+  { "id": "tires", "name": "Dæk & hjul", "meshName": "tires", "guideIds": ["puncture", "tire-pressure", "wheel-wobble"] },
+  { "id": "brakes", "name": "Bremser", "meshName": "brakes", "guideIds": ["brake-cable", "brake-squeal", "brake-pads"] },
+  { "id": "chain", "name": "Kæde", "meshName": "chain", "guideIds": ["chain-off", "chain-squeak", "chain-rust"] },
+  { "id": "gears", "name": "Gear", "meshName": "gears", "guideIds": ["gear-skip", "gear-no-shift"] },
+  { "id": "saddle", "name": "Sadel", "meshName": "saddle", "guideIds": ["saddle-height", "saddle-creak"] },
+  { "id": "handlebar", "name": "Styr", "meshName": "handlebar", "guideIds": ["bar-crooked", "bar-play"] },
+  { "id": "lights", "name": "Lys", "meshName": "lights", "guideIds": ["light-battery", "dynamo-light"] },
+  { "id": "pedals", "name": "Pedaler", "meshName": "pedals", "guideIds": ["pedal-creak", "pedal-loose"] }
+]

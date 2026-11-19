@@ -1,0 +1,214 @@
+[
+  {
+    "id": "puncture", "partId": "tires", "problem": "Punktering", "title": "Lap slangen",
+    "level": "Let", "minutes": 20, "toolIds": ["tire-levers", "patch-kit", "floor-pump"],
+    "avgRating": 4.7, "ratingCount": 212,
+    "steps": [
+      "Tag hjulet af cyklen, og luk al luften ud af slangen.",
+      "Vip dækket af fælgen med to dækjern, og træk slangen ud.",
+      "Pump lidt luft i slangen, og find hullet – lyt efter luften, eller dyp slangen i vand og se efter bobler.",
+      "Ru området op med sandpapiret, smør et tyndt lag solution på, vent ca. 1 minut, og pres lappen godt fast.",
+      "Mærk efter glasskår inde i dækket, læg slangen i, før dækket på plads med hænderne, og pump op."
+    ]
+  },
+  {
+    "id": "tire-pressure", "partId": "tires", "problem": "Dækket er blødt", "title": "Pump op til det rigtige tryk",
+    "level": "Let", "minutes": 5, "toolIds": ["floor-pump"],
+    "avgRating": 4.8, "ratingCount": 156,
+    "steps": [
+      "Find det anbefalede tryk på siden af dækket – det står i bar eller PSI.",
+      "Tjek ventiltypen (cykelventil/Dunlop, racerventil/Presta eller bilventil/Schrader), og brug det rigtige mundstykke.",
+      "Pump, til manometeret viser det anbefalede tryk.",
+      "Tag pumpen af, og skru ventilhætten på igen."
+    ]
+  },
+  {
+    "id": "wheel-wobble", "partId": "tires", "problem": "Hjulet slingrer", "title": "Ret hjulet op og stram akslen",
+    "level": "Mellem", "minutes": 10, "toolIds": ["pedal-wrench"],
+    "avgRating": 4.3, "ratingCount": 64,
+    "steps": [
+      "Løft cyklen, drej hjulet, og se, om det er hele hjulet, der sidder skævt, eller kun fælgen, der slår.",
+      "Løsn akselmøtrikkerne (ofte 15 mm), eller åbn kviklåsen.",
+      "Centrer hjulet, så der er lige stor afstand til stellet på begge sider. Baghjul: træk det bagud, så kæden er stram.",
+      "Spænd møtrikkerne skiftevis, eller luk kviklåsen helt.",
+      "Drej hjulet igen. Slår fælgen stadig, skal den centreres – det klarer en cykelsmed."
+    ]
+  },
+  {
+    "id": "brake-cable", "partId": "brakes", "problem": "Bremsen tager dårligt", "title": "Juster bremsekablet",
+    "level": "Let", "minutes": 10, "toolIds": ["hex-keys"],
+    "avgRating": 4.5, "ratingCount": 98,
+    "steps": [
+      "Klem bremsegrebet, og se, hvor langt det går ind, før bremsen tager.",
+      "Skru justeringsskruen ved grebet ud (mod uret) et par omgange for at stramme kablet.",
+      "Er det ikke nok: skru justeringsskruen ind igen, løsn kabelklemmen ved bremsen med en unbrakonøgle, træk kablet strammere, og spænd igen.",
+      "Drej hjulet, og tjek, at klodserne ikke slæber. Test bremsen grundigt, før du kører."
+    ]
+  },
+  {
+    "id": "brake-squeal", "partId": "brakes", "problem": "Bremsen hviner", "title": "Rens fælg og bremseklodser",
+    "level": "Let", "minutes": 10, "toolIds": ["degreaser"],
+    "avgRating": 4.2, "ratingCount": 71,
+    "steps": [
+      "Rens fælgens bremseflade med lidt affedter på en ren klud.",
+      "Pil forsigtigt snavs og små sten ud af bremseklodserne.",
+      "Er klodserne blanke, så ru overfladen let op med fint sandpapir.",
+      "Tjek, at klodserne rammer fælgen plant – og aldrig dækket."
+    ]
+  },
+  {
+    "id": "brake-pads", "partId": "brakes", "problem": "Slidte klodser", "title": "Skift bremseklodser",
+    "level": "Mellem", "minutes": 20, "toolIds": ["brake-pads", "hex-keys"],
+    "avgRating": 4.4, "ratingCount": 83,
+    "steps": [
+      "Tjek, at du har de rigtige klodser til din bremsetype (fælgbremse eller skivebremse).",
+      "Løsn bolten, der holder klodsen, med en unbrakonøgle, og tag den gamle klods af.",
+      "Monter den nye klods, så den rammer midt på fælgens bremseflade, og spænd bolten.",
+      "Juster kablet, så klodserne sidder 1–2 mm fra fælgen, og test bremsen grundigt."
+    ]
+  },
+  {
+    "id": "chain-off", "partId": "chain", "problem": "Kæden er hoppet af", "title": "Læg kæden på igen",
+    "level": "Let", "minutes": 5, "toolIds": [],
+    "avgRating": 4.8, "ratingCount": 241,
+    "steps": [
+      "Skift til det mindste tandhjul bagpå (og foran, hvis du har flere klinger).",
+      "Skub bagskifteren fremad for at give slæk. Har cyklen navgear, så løsn i stedet baghjulets møtrikker.",
+      "Læg kæden på nogle få tænder på den forreste klinge.",
+      "Drej langsomt pedalerne baglæns, så kæden løber på plads. Stram baghjulet igen, hvis du løsnede det."
+    ]
+  },
+  {
+    "id": "chain-squeak", "partId": "chain", "problem": "Kæden knirker", "title": "Rens og smør kæden",
+    "level": "Let", "minutes": 15, "toolIds": ["degreaser", "chain-oil"],
+    "avgRating": 4.6, "ratingCount": 187,
+    "steps": [
+      "Tør kæden af med en klud, mens du drejer pedalerne baglæns.",
+      "Påfør affedter, lad det virke et par minutter, og tør kæden ren og tør.",
+      "Giv én dråbe kædeolie på hvert led, mens du drejer pedalerne.",
+      "Lad olien trække ind i nogle minutter, og tør overskydende olie af."
+    ]
+  },
+  {
+    "id": "chain-rust", "partId": "chain", "problem": "Kæden er rusten", "title": "Affedt kæden eller skift den",
+    "level": "Mellem", "minutes": 30, "toolIds": ["degreaser", "chain-oil", "chain-tool"],
+    "avgRating": 4.1, "ratingCount": 52,
+    "steps": [
+      "Er rusten kun på overfladen, så rens kæden grundigt med affedter og en børste.",
+      "Bøj kæden, og tjek leddene. Led, der bliver ved med at være stive, betyder, at kæden skal skiftes.",
+      "Skal den skiftes: tryk en nitte ud med kædeværktøjet (eller åbn kædelåsen), og tag kæden af.",
+      "Afkort den nye kæde til samme længde som den gamle, og saml den med kædeværktøj eller kædelås.",
+      "Smør den nye kæde, og tjek, at den kører let i alle gear."
+    ]
+  },
+  {
+    "id": "gear-skip", "partId": "gears", "problem": "Gearet springer", "title": "Finjuster med justeringsskruen",
+    "level": "Mellem", "minutes": 10, "toolIds": [],
+    "avgRating": 4.3, "ratingCount": 76,
+    "steps": [
+      "Sæt cyklen, så baghjulet kan dreje frit, og skift til det næstmindste tandhjul.",
+      "Drej pedalerne. Vil kæden op på næste tandhjul, så drej justeringsskruen ved bagskifteren en kvart omgang mod uret.",
+      "Vil kæden ned på det mindre tandhjul, så drej skruen med uret i stedet.",
+      "Skift gennem alle gear, og finjuster, til kæden løber stille og skifter præcist."
+    ]
+  },
+  {
+    "id": "gear-no-shift", "partId": "gears", "problem": "Gearet skifter ikke", "title": "Tjek og stram gearkablet",
+    "level": "Mellem", "minutes": 15, "toolIds": ["hex-keys"],
+    "avgRating": 4.2, "ratingCount": 48,
+    "steps": [
+      "Tjek kablet hele vejen for knæk, rust og flossede tråde – er det skadet, skal det skiftes.",
+      "Skift til det mindste tandhjul, og løsn kabelklemmen ved bagskifteren med en unbrakonøgle.",
+      "Træk kablet stramt med hånden, og spænd klemmen igen.",
+      "Finjuster med justeringsskruen, til gearet skifter rent."
+    ]
+  },
+  {
+    "id": "saddle-height", "partId": "saddle", "problem": "Forkert højde", "title": "Indstil sadelhøjden",
+    "level": "Let", "minutes": 5, "toolIds": ["hex-keys"],
+    "avgRating": 4.7, "ratingCount": 134,
+    "steps": [
+      "Løsn sadelpindens klemme med en unbrakonøgle eller kviklåsen.",
+      "Sæt dig på cyklen med hælen på pedalen i bund – benet skal være næsten strakt.",
+      "Juster højden, og sørg for, at minimumsmærket på sadelpinden ikke er synligt.",
+      "Ret sadlen ind efter stellet, og spænd klemmen godt."
+    ]
+  },
+  {
+    "id": "saddle-creak", "partId": "saddle", "problem": "Sadlen knirker", "title": "Smør sadelpinden",
+    "level": "Let", "minutes": 10, "toolIds": ["hex-keys", "grease"],
+    "avgRating": 4.4, "ratingCount": 39,
+    "steps": [
+      "Sæt et stykke tape på sadelpinden, så du kan finde højden igen.",
+      "Løsn klemmen, og træk sadelpinden op.",
+      "Tør pind og sadelrør af, og smør et tyndt lag cykelfedt på pinden. Er pinden af kulfiber, så brug karbonpasta i stedet.",
+      "Sæt pinden tilbage til mærket, og spænd. Knirker det stadig, så smør sadlens skinner og bolte."
+    ]
+  },
+  {
+    "id": "bar-crooked", "partId": "handlebar", "problem": "Styret sidder skævt", "title": "Ret styret op og stram frempinden",
+    "level": "Let", "minutes": 5, "toolIds": ["hex-keys"],
+    "avgRating": 4.6, "ratingCount": 88,
+    "steps": [
+      "Stil dig foran cyklen med forhjulet mellem knæene.",
+      "Løsn frempindens klembolte ved styrrøret et par omgange.",
+      "Ret styret ind, så det står vinkelret på forhjulet.",
+      "Spænd boltene skiftevis og godt fast, og tjek, at styret ikke kan drejes i forhold til hjulet."
+    ]
+  },
+  {
+    "id": "bar-play", "partId": "handlebar", "problem": "Styret slør", "title": "Stram styrlejet",
+    "level": "Mellem", "minutes": 15, "toolIds": ["hex-keys"],
+    "avgRating": 4.2, "ratingCount": 41,
+    "steps": [
+      "Træk forbremsen, og vip cyklen frem og tilbage. Mærker du et klonk ved styrrøret, har styrlejet slør.",
+      "Løsn frempindens klembolte på siden af styrrøret (gælder ahead-styrlejer).",
+      "Stram toplågets bolt en kvart omgang ad gangen, til sløret er væk – styret skal stadig dreje let.",
+      "Ret styret ind, og spænd klemboltene igen."
+    ]
+  },
+  {
+    "id": "light-battery", "partId": "lights", "problem": "Lygten lyser ikke", "title": "Skift batteri eller oplad",
+    "level": "Let", "minutes": 5, "toolIds": [],
+    "avgRating": 4.5, "ratingCount": 67,
+    "steps": [
+      "Tjek, at lygten er tændt og sidder rigtigt i holderen.",
+      "Oplad lygten via USB, eller åbn den, og skift batterierne.",
+      "Rens kontakterne med en tør klud, hvis de er snavsede eller irrede.",
+      "Tænd, og test. Virker den stadig ikke, er lygten sandsynligvis defekt."
+    ]
+  },
+  {
+    "id": "dynamo-light", "partId": "lights", "problem": "Dynamolyset er dødt", "title": "Tjek ledning og forbindelser",
+    "level": "Mellem", "minutes": 15, "toolIds": ["hex-keys"],
+    "avgRating": 4.0, "ratingCount": 29,
+    "steps": [
+      "Tjek både for- og baglygte. Er begge døde, sidder fejlen ofte ved dynamoen eller ledningen.",
+      "Følg ledningen fra dynamoen til lygterne, og se efter brud og løse stik.",
+      "Tryk stikkene godt fast ved dynamo og lygte, og rens dem, hvis de er irrede.",
+      "Løft forhjulet, drej det hurtigt, og se, om lyset tænder."
+    ]
+  },
+  {
+    "id": "pedal-creak", "partId": "pedals", "problem": "Pedalen knirker", "title": "Afmonter, smør gevind og spænd",
+    "level": "Let", "minutes": 10, "toolIds": ["pedal-wrench", "grease"],
+    "avgRating": 4.5, "ratingCount": 58,
+    "steps": [
+      "Husk: venstre pedal har venstregevind. Begge pedaler skrues af ved at dreje nøglen mod cyklens bagende.",
+      "Skru pedalerne af med pedalnøglen.",
+      "Rens gevindet, og smør et tyndt lag cykelfedt på.",
+      "Skru pedalerne i med hånden først (højre med uret, venstre mod uret), og spænd fast med nøglen."
+    ]
+  },
+  {
+    "id": "pedal-loose", "partId": "pedals", "problem": "Pedalen er løs", "title": "Spænd pedalen fast",
+    "level": "Let", "minutes": 5, "toolIds": ["pedal-wrench", "hex-keys"],
+    "avgRating": 4.6, "ratingCount": 44,
+    "steps": [
+      "Find ud af, om det er pedalen i kranken eller selve kranken, der er løs.",
+      "Sidder pedalen løst: spænd med pedalnøglen – højre pedal med uret, venstre mod uret.",
+      "Er det kranken, der er løs, så stram krankbolten med en unbrakonøgle.",
+      "Kør en kort tur, og tjek igen, at intet sidder løst."
+    ]
+  }
+]
