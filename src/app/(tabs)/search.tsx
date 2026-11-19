@@ -55,7 +55,7 @@ export default function SearchScreen() {
               accessibilityLabel={active ? `${chip}, valgt. Tryk for at fravælge` : chip}
               style={[styles.chip, active && styles.chipActive]}
             >
-              <T style={[styles.chipText, active && { color: '#FFFFFF' }]}>{chip}</T>
+              <T style={[styles.chipText, active && { color: colors.textOnDark }]}>{chip}</T>
             </Pressable>
           );
         })}
@@ -95,7 +95,7 @@ export default function SearchScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.background },
   content: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 40 },
   inputWrap: {
     flexDirection: 'row',
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingRight: 4,
     minHeight: 56,
-    backgroundColor: colors.card,
+    backgroundColor: colors.surface,
     borderRadius: radius.card,
     borderWidth: 1,
     borderColor: colors.border,
@@ -118,11 +118,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     justifyContent: 'center',
     borderRadius: 999,
-    backgroundColor: colors.card,
+    backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
   },
-  chipActive: { backgroundColor: colors.accent, borderColor: colors.accent },
+  chipActive: { backgroundColor: colors.primary, borderColor: colors.primary },
   chipText: { fontFamily: fonts.semibold, fontSize: 14, color: colors.text },
   count: { marginTop: 22, marginBottom: 10 },
   empty: { alignItems: 'center', paddingVertical: 36, paddingHorizontal: 12 },

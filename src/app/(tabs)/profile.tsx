@@ -147,18 +147,18 @@ function Empty({ title, body }: { title: string; body: string }) {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.background },
   content: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 40 },
   titleRow: { flexDirection: 'row', alignItems: 'center' },
-  iconBtn: { width: TOUCH, height: TOUCH, borderRadius: TOUCH / 2, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  iconBtn: { width: TOUCH, height: TOUCH, borderRadius: TOUCH / 2, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border },
   profile: { flexDirection: 'row', alignItems: 'center', gap: 14, padding: 16, marginTop: 16 },
-  avatar: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.brand, alignItems: 'center', justifyContent: 'center' },
-  avatarText: { fontFamily: fonts.heading, fontSize: 20, color: '#FFFFFF' },
-  segment: { flexDirection: 'row', backgroundColor: '#E7ECE8', borderRadius: 14, padding: 4, marginTop: 20, marginBottom: 14 },
+  avatar: { width: 56, height: 56, borderRadius: 28, backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center' },
+  avatarText: { fontFamily: fonts.heading, fontSize: 20, color: colors.textOnDark },
+  segment: { flexDirection: 'row', backgroundColor: colors.surfaceMuted, borderRadius: 14, padding: 4, marginTop: 20, marginBottom: 14 },
   segBtn: { flex: 1, minHeight: TOUCH, alignItems: 'center', justifyContent: 'center', borderRadius: 11 },
-  segBtnActive: { backgroundColor: colors.card, shadowColor: '#000', shadowOpacity: 0.06, shadowRadius: 4, shadowOffset: { width: 0, height: 1 }, elevation: 1 },
+  segBtnActive: { backgroundColor: colors.surface, shadowColor: colors.shadow, shadowOpacity: 0.06, shadowRadius: 4, shadowOffset: { width: 0, height: 1 }, elevation: 1 },
   segText: { fontFamily: fonts.semibold, fontSize: 14, color: colors.textSecondary },
   removeBtn: { width: TOUCH, height: TOUCH, alignItems: 'center', justifyContent: 'center', marginRight: 6 },
-  ratingCard: { backgroundColor: colors.card, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border, padding: 16 },
+  ratingCard: { backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border, padding: 16 },
   ratingRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 8 },
 });

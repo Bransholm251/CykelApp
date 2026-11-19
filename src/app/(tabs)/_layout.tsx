@@ -11,9 +11,9 @@ export default function TabsLayout() {
         tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.textSecondary,
         tabBarLabelStyle: { fontFamily: fonts.semibold, fontSize: 11 },
-        tabBarStyle: { backgroundColor: colors.card, borderTopColor: colors.border, minHeight: 60 },
+        tabBarStyle: { backgroundColor: colors.surface, borderTopColor: colors.border, minHeight: 60 },
         tabBarItemStyle: { minHeight: 44 },
-        sceneStyle: { backgroundColor: colors.bg },
+        sceneStyle: { backgroundColor: colors.background },
       }}
     >
       <Tabs.Screen name="index" options={{ title: 'Hjem', tabBarIcon: (p) => <TabBarIcon name="home" {...p} /> }} />

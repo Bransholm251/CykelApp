@@ -39,8 +39,8 @@ export function GuideCard({ guide, part, variant, toolNames = [], right }: Props
         </View>
         {toolNames.length ? (
           <View style={styles.infoRow}>
-            <Store size={15} color={colors.brand} />
-            <T variant="small" style={{ color: colors.brand, fontFamily: fonts.medium }}>Værktøj kan købes hos partner</T>
+            <Store size={15} color={colors.primary} />
+            <T variant="small" style={{ color: colors.primary, fontFamily: fonts.medium }}>Værktøj kan købes hos partner</T>
           </View>
         ) : null}
         <Button
@@ -101,7 +101,7 @@ export function GuideCard({ guide, part, variant, toolNames = [], right }: Props
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  base: { backgroundColor: colors.card, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border },
+  base: { backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border },
   pressed: { opacity: 0.75 },
   badges: { flexDirection: 'row', gap: 6, flexWrap: 'wrap' },
   suggestion: { width: SUGGESTION_CARD_WIDTH, padding: 16, minHeight: 268 },

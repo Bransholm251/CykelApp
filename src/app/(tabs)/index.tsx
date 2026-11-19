@@ -28,7 +28,7 @@ export default function HomeScreen() {
         {/* Header */}
         <View style={styles.header}>
           <View style={styles.logo} accessibilityElementsHidden importantForAccessibility="no">
-            <Bike size={22} color="#FFFFFF" strokeWidth={2} />
+            <Bike size={22} color={colors.textOnDark} strokeWidth={2} />
           </View>
           <T variant="h3" style={{ flex: 1, fontSize: 20 }} accessibilityRole="header">{APP_NAME}</T>
           <Pressable
@@ -43,21 +43,21 @@ export default function HomeScreen() {
 
         {/* Hero */}
         <View style={styles.hero}>
-          <T variant="h1" style={{ color: '#FFFFFF' }}>Fiks cyklen selv – trin for trin</T>
-          <T variant="body" style={{ color: '#DCEBE2', marginTop: 8 }}>
+          <T variant="h1" style={{ color: colors.textOnDark }}>Fiks cyklen selv – trin for trin</T>
+          <T variant="body" style={{ color: colors.textOnDarkMuted, marginTop: 8 }}>
             Spar turen til cykelhandleren. Find fejlen, følg en enkel guide, og få det rigtige værktøj anbefalet.
           </T>
           <View style={styles.heroButtons}>
             <Button
               label="Find problemet"
-              icon={<ScanSearch size={18} color="#FFFFFF" />}
+              icon={<ScanSearch size={18} color={colors.textOnDark} />}
               onPress={() => router.navigate('/find')}
               style={{ flex: 1 }}
             />
             <Button
               label="Søg"
               kind="onBrand"
-              icon={<Search size={18} color="#FFFFFF" />}
+              icon={<Search size={18} color={colors.textOnDark} />}
               onPress={() => router.navigate('/search')}
               style={{ flex: 1 }}
             />
@@ -85,7 +85,7 @@ export default function HomeScreen() {
         {/* Partnere */}
         <View style={styles.section}>
           <Card style={{ padding: 18 }}>
-            <T variant="label" style={{ color: colors.brand }}>Partnerbutikker</T>
+            <T variant="label" style={{ color: colors.primary }}>Partnerbutikker</T>
             <T variant="h2" style={{ marginTop: 6 }}>Det rigtige værktøj til hver reparation</T>
             <T variant="small" style={{ marginTop: 6 }}>
               Hver guide anbefaler det værktøj, du skal bruge – udvalgt sammen med vores partnerbutikker – og viser, hvor du kan købe det.
@@ -139,30 +139,30 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.background },
   content: { paddingHorizontal: 20, paddingBottom: 40 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 8 },
-  logo: { width: 36, height: 36, borderRadius: 10, backgroundColor: colors.brand, alignItems: 'center', justifyContent: 'center' },
+  logo: { width: 36, height: 36, borderRadius: 10, backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center' },
   iconButton: {
     width: TOUCH,
     height: TOUCH,
     borderRadius: TOUCH / 2,
-    backgroundColor: colors.card,
+    backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  hero: { backgroundColor: colors.brand, borderRadius: radius.cardLg, padding: 20, marginTop: 12 },
+  hero: { backgroundColor: colors.primary, borderRadius: radius.cardLg, padding: 20, marginTop: 12 },
   heroButtons: { flexDirection: 'row', gap: 10, marginTop: 20 },
   section: { marginTop: 28 },
   step: { flexDirection: 'row', gap: 12, alignItems: 'flex-start' },
-  stepNum: { width: 32, height: 32, borderRadius: 16, backgroundColor: colors.accentSoft, alignItems: 'center', justifyContent: 'center' },
-  stepNumText: { fontFamily: fonts.heading, color: colors.accent, fontSize: 15 },
+  stepNum: { width: 32, height: 32, borderRadius: 16, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center' },
+  stepNumText: { fontFamily: fonts.heading, color: colors.textOnDark, fontSize: 15 },
   partners: { flexDirection: 'row', gap: 10, marginTop: 16 },
-  partnerLogo: { flex: 1, alignItems: 'center', gap: 6, paddingVertical: 12, borderRadius: radius.sm, backgroundColor: colors.bg, borderWidth: 1, borderColor: colors.border },
-  partnerMark: { width: 40, height: 40, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' },
-  partnerMarkText: { fontFamily: fonts.heading, color: colors.brand, fontSize: 14 },
+  partnerLogo: { flex: 1, alignItems: 'center', gap: 6, paddingVertical: 12, borderRadius: radius.sm, backgroundColor: colors.surfaceMuted, borderWidth: 1, borderColor: colors.border },
+  partnerMark: { width: 40, height: 40, borderRadius: 20, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' },
+  partnerMarkText: { fontFamily: fonts.heading, color: colors.primary, fontSize: 14 },
   seeAll: { flexDirection: 'row', alignItems: 'center', minHeight: TOUCH },
   links: { flexDirection: 'row', gap: 10, marginTop: 16 },
 });

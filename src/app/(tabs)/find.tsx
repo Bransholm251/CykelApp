@@ -60,7 +60,7 @@ export default function FindProblemScreen() {
                 accessibilityLabel={`${p.name}, ${p.guideIds.length} forslag`}
                 style={[styles.srItem, p.id === partId && styles.srItemSelected]}
               >
-                <T variant="bodyStrong" style={p.id === partId ? { color: '#FFFFFF' } : undefined}>{p.name}</T>
+                <T variant="bodyStrong" style={p.id === partId ? { color: colors.textOnDark } : undefined}>{p.name}</T>
               </Pressable>
             ))}
           </View>
@@ -113,13 +113,13 @@ export default function FindProblemScreen() {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.background },
   content: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 32 },
   sub: { color: colors.textSecondary, marginTop: 4 },
-  viewerCard: { marginTop: 16, borderRadius: radius.cardLg, borderWidth: 1, borderColor: colors.border, overflow: 'hidden', backgroundColor: colors.card },
+  viewerCard: { marginTop: 16, borderRadius: radius.cardLg, borderWidth: 1, borderColor: colors.border, overflow: 'hidden', backgroundColor: colors.surface },
   srList: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 12 },
-  srItem: { minHeight: TOUCH, paddingHorizontal: 14, justifyContent: 'center', borderRadius: 999, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card },
-  srItemSelected: { backgroundColor: colors.accent, borderColor: colors.accent },
+  srItem: { minHeight: TOUCH, paddingHorizontal: 14, justifyContent: 'center', borderRadius: 999, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface },
+  srItemSelected: { backgroundColor: colors.primary, borderColor: colors.primary },
   partRow: { flexDirection: 'row', alignItems: 'flex-end', marginTop: 20, marginBottom: 12 },
   carousel: { marginHorizontal: -20 },
   carouselContent: { paddingHorizontal: 20 },

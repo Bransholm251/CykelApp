@@ -12,7 +12,7 @@
  */
 import React, { Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, LayoutChangeEvent, PanResponder, StyleSheet, Text, View } from 'react-native';
-import { Canvas, useFrame, useThree } from '@react-three/fiber/native';
+import { Canvas, useFrame, useThree } from './bike/r3f';
 import { Box3, Camera, Color, Euler, Group, Material, Matrix4, Mesh, Object3D, Raycaster, Vector2, Vector3 } from 'three';
 import { Rotate3d } from 'lucide-react-native';
 import type { Part } from '@/types';
@@ -168,7 +168,7 @@ export function BikeViewer({ parts, selectedPartId, onSelectPart, onRotatingChan
             camera={CAMERA}
             gl={{ antialias: true }}
             shadows={false}
-            onCreated={(state) => state.gl.setClearColor('#FFFFFF', 1)}
+            onCreated={(state) => state.gl.setClearColor(colors.surface, 1)}
           >
             <ambientLight intensity={1.1} />
             <directionalLight position={[2, 3, 2]} intensity={1.6} />
@@ -190,7 +190,7 @@ export function BikeViewer({ parts, selectedPartId, onSelectPart, onRotatingChan
 
       {!anchors ? (
         <View style={styles.loading} pointerEvents="none">
-          <ActivityIndicator color={colors.brand} />
+          <ActivityIndicator color={colors.primary} />
         </View>
       ) : null}
 
@@ -315,7 +315,7 @@ function Scene({
 }
 
 const styles = StyleSheet.create({
-  wrap: { backgroundColor: '#FFFFFF', overflow: 'hidden' },
+  wrap: { backgroundColor: colors.surface, overflow: 'hidden' },
   loading: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
   hint: {
     position: 'absolute',
@@ -327,7 +327,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 5,
     borderRadius: 999,
-    backgroundColor: 'rgba(244,246,243,0.92)',
+    backgroundColor: colors.overlayLight,
     borderWidth: 1,
     borderColor: colors.border,
   },
@@ -336,10 +336,10 @@ const styles = StyleSheet.create({
     position: 'absolute',
     height: 30,
     borderRadius: 15,
-    backgroundColor: colors.dark,
+    backgroundColor: colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 12,
   },
-  bubbleText: { fontFamily: fonts.semibold, fontSize: 13, color: '#FFFFFF' },
+  bubbleText: { fontFamily: fonts.semibold, fontSize: 13, color: colors.textOnDark },
 });

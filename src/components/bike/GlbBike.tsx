@@ -5,7 +5,7 @@
  * src/components/bike/index.ts til `require('../../../assets/models/bike.glb')`.
  */
 import React, { useMemo } from 'react';
-import { useGLTF } from '@react-three/drei/native';
+import { useGLTF } from './r3f';
 import { Box3, Mesh, Vector3 } from 'three';
 
 /** Modellen skaleres, så den er ca. så lang som den primitive cykel. */

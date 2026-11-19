@@ -49,7 +49,8 @@ src/
     UserDataProvider.tsx    Gæsteprofil, gemte guides og ratings (AsyncStorage)
   lib/                      Søgning (æ/ø/å + stavefejl), formatering, links
   config.ts                 Appnavn, firmanavn, kontakt- og partner-links
-  theme.ts                  Farver, skrifttyper, radius, touch-mål
+  theme/colors.ts           Farvetema "Kobber og grafit" – alle farver i appen kommer herfra
+  theme/index.ts            Skrifttyper, radius, touch-mål (+ re-eksport af colors)
 assets/models/              Her lægges bike.glb
 ```
 

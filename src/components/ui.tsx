@@ -26,7 +26,7 @@ export function Card({ style, children }: { style?: StyleProp<ViewStyle>; childr
   return <View style={[styles.card, style]}>{children}</View>;
 }
 
-type ButtonKind = 'primary' | 'secondary' | 'onBrand' | 'onDark' | 'ghost';
+type ButtonKind = 'primary' | 'dark' | 'secondary' | 'onBrand' | 'onDark' | 'ghost';
 
 export function Button({
   label,
@@ -47,7 +47,7 @@ export function Button({
     <Pressable
       accessibilityRole="button"
       {...rest}
-      style={({ pressed }) => [styles.button, compact && styles.buttonCompact, k.box, pressed && { opacity: 0.8 }, style]}
+      style={({ pressed }) => [styles.button, compact && styles.buttonCompact, k.box, pressed && (kind === 'primary' ? { backgroundColor: colors.accentPressed } : { opacity: 0.8 }), style]}
     >
       {icon}
       <Text style={[styles.buttonText, { color: k.text }]}>{label}</Text>
@@ -56,10 +56,11 @@ export function Button({
 }
 
 const buttonKinds: Record<ButtonKind, { box: ViewStyle; text: string }> = {
-  primary: { box: { backgroundColor: colors.accent }, text: '#FFFFFF' },
-  secondary: { box: { backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }, text: colors.text },
-  onBrand: { box: { backgroundColor: 'rgba(255,255,255,0.14)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.35)' }, text: '#FFFFFF' },
-  onDark: { box: { backgroundColor: '#FFFFFF' }, text: colors.text },
+  primary: { box: { backgroundColor: colors.accent }, text: colors.textOnDark },
+  dark: { box: { backgroundColor: colors.primary }, text: colors.textOnDark },
+  secondary: { box: { backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.border }, text: colors.text },
+  onBrand: { box: { backgroundColor: colors.overlayOnDark, borderWidth: 1, borderColor: colors.overlayOnDarkBorder }, text: colors.textOnDark },
+  onDark: { box: { backgroundColor: colors.surface }, text: colors.text },
   ghost: { box: { backgroundColor: 'transparent' }, text: colors.accent },
 };
 
@@ -112,7 +113,7 @@ export function SectionHeader({ title, subtitle, right }: { title: string; subti
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: colors.card, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border },
+  card: { backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border },
   button: {
     minHeight: TOUCH,
     paddingHorizontal: 18,
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
   buttonCompact: { paddingHorizontal: 14, borderRadius: 12 },
   buttonText: { fontFamily: fonts.semibold, fontSize: 15 },
   badge: { flexDirection: 'row', alignItems: 'center', gap: 4, paddingHorizontal: 8, paddingVertical: 3, borderRadius: radius.pill, alignSelf: 'flex-start' },
-  neutralBadge: { backgroundColor: colors.bg, borderWidth: 1, borderColor: colors.border },
+  neutralBadge: { backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border },
   badgeText: { fontFamily: fonts.semibold, fontSize: 12, lineHeight: 16 },
   sectionHeader: { flexDirection: 'row', alignItems: 'flex-end', gap: 12, marginBottom: 12 },
 });

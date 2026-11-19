@@ -16,7 +16,7 @@ export function ToolCard({ tool, partners }: { tool: Tool; partners: Partner[] }
           {tool.imageUrl ? (
             <Image source={{ uri: tool.imageUrl }} style={StyleSheet.absoluteFill} resizeMode="cover" accessibilityIgnoresInvertColors />
           ) : (
-            <Wrench size={28} color={colors.brand} strokeWidth={1.6} />
+            <Wrench size={28} color={colors.textSecondary} strokeWidth={1.6} />
           )}
         </View>
         <View style={{ flex: 1 }}>
@@ -35,7 +35,8 @@ export function ToolCard({ tool, partners }: { tool: Tool; partners: Partner[] }
             <Button
               label="Køb"
               compact
-              icon={<ShoppingCart size={16} color="#FFFFFF" />}
+              kind="dark"
+              icon={<ShoppingCart size={16} color={colors.textOnDark} />}
               onPress={() => openInApp(offer.url)}
               accessibilityLabel={`Køb ${tool.name} hos ${partner?.name ?? 'partner'} for ${formatPrice(offer.price)}`}
             />
@@ -47,8 +48,8 @@ export function ToolCard({ tool, partners }: { tool: Tool; partners: Partner[] }
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: colors.card, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border, padding: 14, gap: 10 },
+  card: { backgroundColor: colors.surface, borderRadius: radius.card, borderWidth: 1, borderColor: colors.border, padding: 14, gap: 10 },
   top: { flexDirection: 'row', gap: 12 },
-  image: { width: 64, height: 64, borderRadius: 14, backgroundColor: colors.levelEasyBg, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' },
+  image: { width: 64, height: 64, borderRadius: 14, backgroundColor: colors.surfaceMuted, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' },
   offer: { flexDirection: 'row', alignItems: 'center', gap: 12, borderTopWidth: 1, borderTopColor: colors.border, paddingTop: 10 },
 });

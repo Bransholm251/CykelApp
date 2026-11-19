@@ -10,10 +10,10 @@ export function MechanicCard({ title, body, buttonLabel, style }: { title: strin
   return (
     <View style={[styles.box, style]}>
       <View style={styles.icon}>
-        <MapPin size={20} color={colors.onDark} />
+        <MapPin size={20} color={colors.textOnDark} />
       </View>
-      <T variant="h3" style={{ color: colors.onDark, marginTop: 12 }}>{title}</T>
-      {body ? <T variant="small" style={{ color: colors.onDarkSecondary, marginTop: 4 }}>{body}</T> : null}
+      <T variant="h3" style={{ color: colors.textOnDark, marginTop: 12 }}>{title}</T>
+      {body ? <T variant="small" style={{ color: colors.textOnDarkMuted, marginTop: 4 }}>{body}</T> : null}
       <View style={{ flex: 1 }} />
       <Button kind="onDark" label={buttonLabel} onPress={findMechanic} style={{ marginTop: 16 }} />
     </View>
@@ -21,6 +21,6 @@ export function MechanicCard({ title, body, buttonLabel, style }: { title: strin
 }
 
 const styles = StyleSheet.create({
-  box: { backgroundColor: colors.dark, borderRadius: radius.cardLg, padding: 18 },
-  icon: { width: 40, height: 40, borderRadius: 12, backgroundColor: 'rgba(255,255,255,0.1)', alignItems: 'center', justifyContent: 'center' },
+  box: { backgroundColor: colors.primary, borderRadius: radius.cardLg, padding: 18 },
+  icon: { width: 40, height: 40, borderRadius: 12, backgroundColor: colors.overlayOnDark, alignItems: 'center', justifyContent: 'center' },
 });

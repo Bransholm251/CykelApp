@@ -58,8 +58,8 @@ export default function GuideScreen() {
             accessibilityState={{ selected: saved }}
             style={[styles.saveBtn, saved && styles.saveBtnActive]}
           >
-            {saved ? <BookmarkCheck size={18} color="#FFFFFF" /> : <Bookmark size={18} color={colors.text} />}
-            <T style={[styles.saveText, saved && { color: '#FFFFFF' }]}>{saved ? 'Gemt' : 'Gem'}</T>
+            {saved ? <BookmarkCheck size={18} color={colors.textOnDark} /> : <Bookmark size={18} color={colors.text} />}
+            <T style={[styles.saveText, saved && { color: colors.textOnDark }]}>{saved ? 'Gemt' : 'Gem'}</T>
           </Pressable>
         }
       />
@@ -76,9 +76,9 @@ export default function GuideScreen() {
         {/* Pladsholder til video/animation */}
         <View style={styles.media} accessible accessibilityLabel="Video til guiden kommer snart">
           <View style={styles.play}>
-            <Play size={26} color="#FFFFFF" fill="#FFFFFF" />
+            <Play size={26} color={colors.textOnDark} fill={colors.textOnDark} />
           </View>
-          <T variant="small" style={{ color: '#DCEBE2', marginTop: 10 }}>Video kommer snart</T>
+          <T variant="small" style={{ marginTop: 10 }}>Video kommer snart</T>
         </View>
 
         <View style={styles.section}>
@@ -167,7 +167,7 @@ function TopBar({ onBack, right }: { onBack(): void; right?: React.ReactNode }) 
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.background },
   topbar: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 12, paddingVertical: 4 },
   backBtn: { flexDirection: 'row', alignItems: 'center', minHeight: TOUCH, paddingRight: 12 },
   saveBtn: {
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     borderWidth: 1,
     borderColor: colors.border,
-    backgroundColor: colors.card,
+    backgroundColor: colors.surface,
   },
   saveBtnActive: { backgroundColor: colors.accent, borderColor: colors.accent },
   saveText: { fontFamily: fonts.semibold, fontSize: 14 },
@@ -189,15 +189,15 @@ const styles = StyleSheet.create({
     marginTop: 18,
     height: 190,
     borderRadius: radius.cardLg,
-    backgroundColor: colors.brand,
+    backgroundColor: colors.surfaceMuted,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  play: { width: 60, height: 60, borderRadius: 30, backgroundColor: 'rgba(255,255,255,0.18)', alignItems: 'center', justifyContent: 'center', paddingLeft: 4 },
+  play: { width: 60, height: 60, borderRadius: 30, backgroundColor: colors.primary, alignItems: 'center', justifyContent: 'center', paddingLeft: 4 },
   section: { marginTop: 28 },
   step: { flexDirection: 'row', gap: 12 },
   stepNum: { width: 28, height: 28, borderRadius: 14, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center', marginTop: -2 },
-  stepNumText: { fontFamily: fonts.heading, color: '#FFFFFF', fontSize: 14 },
+  stepNumText: { fontFamily: fonts.heading, color: colors.textOnDark, fontSize: 14 },
   thanks: { marginTop: 6, color: colors.levelEasyText, fontFamily: fonts.semibold },
   comment: {
     marginTop: 14,
@@ -210,6 +210,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: colors.text,
     textAlignVertical: 'top',
-    backgroundColor: colors.bg,
+    backgroundColor: colors.background,
   },
 });

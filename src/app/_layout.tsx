@@ -24,7 +24,7 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <UserDataProvider>
         <StatusBar style="dark" />
-        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
+        <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
           <Stack.Screen name="(tabs)" />
           <Stack.Screen name="guide/[id]" />
         </Stack>

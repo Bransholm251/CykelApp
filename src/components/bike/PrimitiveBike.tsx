@@ -10,19 +10,22 @@
  */
 import React, { useMemo } from 'react';
 import { Quaternion, Vector3 } from 'three';
+import { colors } from '@/theme';
 
 type V3 = [number, number, number];
 
+// Farver fra temaet: stel i sage, hjul og komponenter i grafit (text).
 const COLOR = {
-  frame: '#2F6B4F',
-  tire: '#1E2622',
-  rim: '#A9B4AE',
-  metal: '#7C8983',
-  dark: '#2B3530',
-  saddle: '#3A2E28',
-  light: '#F4F1E8',
-  rearLight: '#C0392B',
-  brake: '#4B5A52',
+  frame: colors.sage,
+  tire: colors.text,
+  rim: colors.text,
+  metal: colors.text,
+  dark: colors.text,
+  saddle: colors.text,
+  light: colors.surface,
+  lightGlow: colors.accentTint,
+  rearLight: colors.bikeRearLight,
+  brake: colors.text,
 };
 
 const UP = new Vector3(0, 1, 0);
@@ -179,7 +182,7 @@ export function PrimitiveBike() {
       <group name="lights">
         <mesh position={[0.47, 0.88, 0]} rotation={[0, 0, Math.PI / 2]}>
           <cylinderGeometry args={[0.03, 0.025, 0.06, 10]} />
-          <meshStandardMaterial color={COLOR.light} emissive="#FFE9A8" emissiveIntensity={0.15} />
+          <meshStandardMaterial color={COLOR.light} emissive={COLOR.lightGlow} emissiveIntensity={0.15} />
         </mesh>
         <Box position={[-0.24, 0.86, 0]} size={[0.03, 0.04, 0.04]} color={COLOR.rearLight} />
         <Anchor name="lights" position={[0.52, 0.88, 0]} />
